@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles */
+    li {
+      display: inline;
+    }
+
+    span {
+      display: block;
+    }
+
+    a {
+      display: block;
+    }
+
+    h1.hidden {
+      display: none;
+    }
+
+    h1.hidden {
+      visibility: hidden;
+    }
+
+    div.ex1 {
+      width: 500px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    div.ex2 {
+      max-width: 500px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    div.static {
+      position: static;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative {
+      position: relative;
+      left: 30px;
+      border: 3px solid #73AD21;
+    }
+
+    div.fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      border: 3px solid #73AD21;
+    }
+
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+
+    div.sticky {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: green;
+      border: 2px solid #4CAF50;
+    }
+
+    img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+
+    /* Additional CSS for boxes */
+    .container {
+      position: relative;
+    }
+
+    .black-box {
+      position: relative;
+      z-index: 1;
+      border: 2px solid black;
+      height: 100px;
+      margin: 30px;
+    }
+
+    .gray-box {
+      position: absolute;
+      z-index: 3;
+      background: lightgray;
+      height: 60px;
+      width: 70%;
+      left: 50px;
+      top: 50px;
+    }
+
+    .green-box {
+      position: absolute;
+      z-index: 2;
+      background: lightgreen;
+      width: 35%;
+      left: 270px;
+      top: -15px;
+      height: 100px;
+    }
+
+    /* Box overflow */
+    div {
+      width: 200px;
+      height: 65px;
+      background-color: coral;
+      overflow: visible;
+    }
+
+    div {
+      overflow: hidden;
+    }
+
+    div {
+      overflow: scroll;
+    }
+
+    div {
+      overflow: auto;
+    }
+
+    div {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-y: scroll; /* Add vertical scrollbar */
+    }
+
+    img {
+      float: right;
+    }
+
+    img {
+      float: left;
+    }
+
+    img {
+      float: none;
+    }
+
+    div {
+      float: left;
+      padding: 15px;
+    }
+
+    .div1 {
+      background: red;
+    }
+
+    .div2 {
+      background: yellow;
+    }
+
+    .div3 {
+      background: green;
+    }
+
+    div1 {
+      float: left;
+    }
+
+    div2 {
+      clear: left;
+    }
+
+    .clearfix {
+      overflow: auto;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      float: left;
+      width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+      padding: 50px; /* if you want space between the images */
+      height: 500px;
+    }
+
+    .img-container {
+      float: left;
+      width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+      padding: 5px; /* if you want space between the images */
+    }
+
+    .header, .footer {
+      background-color: grey;
+      color: white;
+      padding: 15px;
+    }
+
+    .column {
+      float: left;
+      padding: 15px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .menu {
+      width: 25%;
+    }
+
+    .content {
+      width: 75%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HTML structure -->
+<div class="container">
+  <div class="black-box">Black box</div>
+  <div class="gray-box">Gray box</div>
+  <div class="green-box">Green box</div>
+</div>
+
+</body>
+</html>
